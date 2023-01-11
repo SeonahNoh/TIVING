@@ -1,0 +1,102 @@
+{
+  "poster" : [
+    {
+      "title": "최강야구",
+      "img": "https://image.tving.com/upload/fe/highlight/2022/1208/20221208080332banner_image_url_u.jpg/dims/resize/F_webp,1920",
+      "content": "야구 강팀이 펼치는 양보 없는 대결!"
+    },
+    {
+      "title": "미씽",
+      "img": "https://image.tving.com/upload/fe/highlight/2022/1220/20221220112154banner_image_url_u.jpg/dims/resize/F_webp,1920",
+      "content": "'영혼 보는 콤비' 의 판타지 추적극"
+    },
+    {
+      "title": "대행사",
+      "img": "https://image.tving.com/upload/fe/highlight/2023/0107/20230107214858banner_image_url_u.jpg/dims/resize/F_webp,1920",
+      "content": "우아하게 처절한 광고대행사 오피스 드라마"
+    }
+  ],
+  "recomm_1" : [
+    {
+      "id": 0,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001665114.jpg/dims/resize/F_webp,400",
+      "title": "아일랜드"
+    },
+    {
+      "id": 1,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001665231.jpg/dims/resize/F_webp,400",
+      "title": "러브캐처 인 발리"
+    },
+    {
+      "id": 2,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001651316.jpg/dims/resize/F_webp,400",
+      "title": "술꾼도시여자들2"
+    },
+    {
+      "id": 3,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001685046.jpg/dims/resize/F_webp,400",
+      "title": "슬램덩크"
+    },
+    {
+      "id": 4,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001682753.jpg/dims/resize/F_webp,400",
+      "title": "어나더 레코드"
+    },
+    {
+      "id": 5,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001676415.jpg/dims/resize/F_webp,400",
+      "title": "캐나다 체크인"
+    },
+    {
+      "id": 6,
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001466438.jpg/dims/resize/F_webp,400",
+      "title": "마인"
+    },
+    {
+      "id": 7,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P001682597.jpg/dims/resize/F_webp,400",
+      "title": "잠적: 김민하"
+    },
+    {
+      "id": 8,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P000569739.jpg/dims/resize/F_webp,400",
+      "title": "라이프 온 마스"
+    },
+    {
+      "id": 9,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P001609758.jpg/dims/resize/F_webp,400",
+      "title": "최강야구"
+    },
+    {
+      "id": 10,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P000934156.jpg/dims/resize/F_webp,400",
+      "title": "WATCHER (왓쳐)"
+    },
+    {
+      "id": 11,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P001565742.jpg/dims/resize/F_webp,400",
+      "title": "돼지의 왕"
+    },
+    {
+      "id": 12,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P001200041.jpg/dims/resize/F_webp,400",
+      "title": "아가사 크리스티: 미스 마플 시즌5"
+    },
+    {
+      "id": 13,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P001587338.jpg/dims/resize/F_webp,400",
+      "title": "장미맨션"
+    },
+    {
+      "id": 14,
+      "img": "https://image.tving.com/upload/cms/caip/CAIP0900/P000297042.jpg/dims/resize/F_webp,400",
+      "title": "굿와이프"
+    }
+  ],
+  "recomm_2" : [
+    {
+      "title": "아일랜드",
+      "img" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001665114.jpg/dims/resize/F_webp,400",
+    },
+  ]
+}
