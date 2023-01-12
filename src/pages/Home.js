@@ -43,9 +43,8 @@ function Home() {
 
   const path = process.env.PUBLIC_URL;
   useEffect(() => {
-    axios.get(`${path}/data.json`)
+    axios.get(`https://SeonahNoh.github.io/data/data.json`)
     .then(res => {
-      // console.log('통신결과: ', res.data.recomm_1);
       setPost(res.data.poster);
       setRecomm(res.data.recomm);
       setPopular(res.data.popular);
