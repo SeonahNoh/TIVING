@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { CiSearch } from "react-icons/ci";
-import { AiOutlineRight } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineRight } from "react-icons/ai";
+import { CiSearch } from "react-icons/ci";
 import './Header.scss';
 
 
@@ -9,9 +9,18 @@ function Header() {
   const [visible, setVisible] = useState(false);
   const [hover, setHover] = useState(false);
 
+  const [scrollPos, setScrollPos] = useState(0);
+  const scrollMenu = () => {
+    setScrollPos(window.scrollY || document.documentElement.scrollTop);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollMenu);
+  })
+
   return (
     <header>
-      <div className="header_wrap">
+      <div className={`header_wrap ${scrollPos > 100 && 'color_change'}`}>
         <div className="logo_menu">
           <h1><Link to="/" className="logo">TVING</Link></h1>
           <div><Link to="/live" className="color_menu live">실시간</Link></div>
