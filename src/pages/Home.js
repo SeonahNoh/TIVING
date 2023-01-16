@@ -39,9 +39,7 @@ function Home() {
   const [reversal, setReversal] = useState([]);
   const [crime, setCrime] = useState([]);
   const [coming, setComing] = useState([]);
-
-
-  const path = process.env.PUBLIC_URL;
+  
   useEffect(() => {
     axios.get(`https://SeonahNoh.github.io/data/data.json`)
     .then(res => {

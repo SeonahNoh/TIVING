@@ -1,180 +1,15 @@
-.Home {
+.Movie {
   overflow-x: hidden;
 
-  section.main_head_wrap {
-    height: 100%;
-    
-    // ========================== swiper 슬라이드 ==========================
-    .swiper_style {
-      position: relative;
-      width: 100%;
-      height: 100%;
   
-      .slide_style {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-  
-        &::after {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 24%;
-          display: block;
-          content: "";
-          background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-        }
-
-        .article_cnt {
-          position: absolute;
-          bottom: 6.555%; left: 3.888rem;
-          
-          p {
-            z-index: 999;
-            width: 100%;
-            margin: 1rem 0 0;
-            opacity: 0.87;
-            font-size: 1.46rem;
-            line-height: 1.44;
-            text-align: left;
-            color: #fff;
-            margin-bottom: 10rem;
-          }
-        } // article_cnt
-
-        .article_btn {
-          position: absolute;
-          bottom: 20%; right: 3.888rem;
-          cursor: pointer;
-          
-          span {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.15rem 2.8rem;
-            border-radius: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            font-size: 1.25rem;
-            color: #fff;
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            opacity: 0.9;
-            transition: all 0.1s;
-
-            &:hover {
-              border-color: rgba(255, 255, 255, 1);
-              opacity: 1;
-            }
-          }
-        } // article_btn
-
-      } // swiper-slide slide_style
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        position: absolute;
-        top: 0;
-        width: 3.888rem;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 100% auto;
-        opacity: 0.7;
-        transition: opacity 0.1s;
-  
-        &:hover {
-          opacity: 1;
-        }
-      }
-
-      .swiper-button-next {
-        right: 0;
-        background-image: url(https://www.tving.com/img/icon_slide_right.svg);
-      }
-  
-      .swiper-button-prev {
-        left: 0;
-        background-image: url(https://www.tving.com/img/icon_slide_left.svg);
-      }
-  
-      .swiper-button-next::after,
-      .swiper-button-prev::after {
-        display: none;
-      } 
-
-      .swiper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-  
-      .swiper-pagination {
-        width: auto;
-        position: absolute;
-        bottom: 20%; left: 5.5rem;
-
-        .swiper-pagination-bullet {
-          width: 0.6rem;
-          height: 0.66rem;
-          margin: 0.388rem;
-          background-color: rgba(255, 255, 255, 1);
-        }
-
-        .swiper-pagination-bullet-active {
-          background-color: rgba(255, 255, 255, 1);
-        }
-      }
-
-      .btn {
-        position: absolute;
-        bottom: 20%; left: 2.5rem;
-        z-index: 100;
-        width: 3.733rem;
-        height: 1.733rem;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        cursor: pointer;
-
-        .btn_pause {
-          display: inline-block;
-          border-color: #fff;
-          border-style: solid;
-          border-width: 0 0.4em;
-          padding: 1.3em 0.5em 0 0;
-          line-height: normal;
-          margin: 0;
-        } // btn_pause
-
-        .btn_play {
-          display: inline-block;
-          width: 0.12rem;
-          height: 0.39rem;
-          padding-top: 0.9em;
-          padding-right: 0.95em;
-          background-image: url(https://www.tving.com/img/icon_play_arow.svg);
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: contain;
-        } // btn_play
-
-      } // btn
-    } // swiper swiper_style
-  } // main_head_wrap
-  // ========================== swiper 끝 ==========================
-
   section.content_wrap {
     overflow: hidden;
     position: relative;
-    margin-top: -5.8rem;
+    margin-top: 5.833rem;
+    padding-top: 1.333rem;
     z-index: 1;
 
     section.recomm_list {
-
       .tt_flex {
         padding-left: 3.888rem;
         padding-right: 3.888rem;
@@ -213,8 +48,8 @@
             margin-right: 9px;
             transform: translate3d(0, 0, 0);
             transition: transform 300ms ease-in-out;
-  
-            &:hover {
+
+            &.trans_slide:hover {
               transform: translate3d(0, -0.75rem, 0);
 
               .rcmm_item {
@@ -225,6 +60,7 @@
                 color: rgba(255, 255, 255, 1);
               }
             }
+            
   
             a {
               position: relative;
@@ -316,7 +152,67 @@
                     height: 100%;
                   }
                 }
+
+                .summary_item {
+                  position: absolute;
+                  top: 0; bottom: 0; left: 0; right: 0;
+                  z-index: 2;
+                  height: 100%;
+                  backdrop-filter: blur(30px);
+                  background-color: rgba(25, 25, 25, 0.96);
+                  font-size: 0.8em;
+                  transition: opacity 0.1s;
+                  // opacity: 0;
+
+                  &::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+                  }
+
+                  dl {
+                    padding: 2.083rem 1.45rem;
+
+                    dt {
+                      font-weight: 700;
+                      font-size: 1.7rem;
+                      line-height: 1.3;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      display: -webkit-box;
+                      word-wrap: break-word;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      color: rgba(255, 255, 255, 0.94);
+                    }
+
+                    dd {
+                      margin: 0 auto;
+                      opacity: 0.5;
+
+                      span {
+                        font-size: 1.22rem;
+                        line-height: 2em;
+                        color: #fff;
+                      }
+
+                      p {
+                        margin-top: 0;
+                        font-size: 0.96rem;
+                        line-height: 1.8em;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: rgba(255, 255, 255, 0.64);  
+                      }
+                    }
+                  } // dl
+                } // summary_item
+
               } // rcmm_item
+
   
               .info_item {
                 padding: 0.6em 1em 0 0.05em;
@@ -378,6 +274,40 @@
               }
             } // monopoly_slide
 
+            .genre_item {
+              position: relative;
+              border-radius: 0.425em;
+              font-size: 1.175rem;
+              color: #fff;
+
+              span {
+                display: flex;
+                min-height: 3.677rem;
+                justify-content: center;
+                align-items: center;
+                padding: 0.9rem 2.333rem 0.9rem;
+                border-radius: 999px;
+                background-color: rgba(33, 33, 33, 1);
+                color: rgb(255, 220, 62);
+                font-size: 1.25rem;
+                box-sizing: border-box;
+                transition: all 0.1s ease 0s;
+
+                &:hover {
+                  background-color: rgba(46, 46, 46, 1);
+                  color: #fbe275;
+                }
+              }
+              
+            } // genre_item
+            
+            &.auto_width {
+              width: auto !important;
+              min-width: 144.828px;
+              margin: 0;
+              // background-color: red;
+            }
+
           } // recomm_slide
 
           .swiper-button-prev,
@@ -416,7 +346,5 @@
         } // recomm_swiper
       } // lists_wrap
     } // recomm_list
-
   } // content_wrap
-
-} // Home
+} // Movie
