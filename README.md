@@ -18,6 +18,28 @@ https://user-images.githubusercontent.com/114633506/212847598-6fffd64a-af09-4b78
 
 <br>
 
+## 😎 기술 스택
+<table>
+  <tr>
+    <th>Language</th>
+    <td>JavaScript</td>
+  </tr>
+  <tr>
+    <th>Library</th>
+    <td>React</td>
+  </tr>
+  <tr>
+    <th>State Container</th>
+    <td>Redux</td>
+  </tr>
+  <tr>
+    <th>Component</th>
+    <td>Styled-Components</td>
+  </tr>
+</table>
+
+<br>
+
 ## 🛠 추가할 기능
 - Redux 이용하기  
 
