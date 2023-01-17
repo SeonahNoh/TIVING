@@ -1,7 +1,9 @@
 # 🐳 TIVING CLONE CODING  
 
 ## 👋 소개
-<img src="https://img.shields.io/badge/React-dedede?style=flat&logo=React&logoColor=white"/>를 기반으로 OTT 서비스 회사 **티빙**을 구현하였습니다.
+- **작업기간** : 2023.01.09 ~ 2023.01.19  
+- **참여율** : 100%  
+- <img src="https://img.shields.io/badge/React-dedede?style=flat&logo=React&logoColor=white"/>를 기반으로 OTT 서비스 회사 **티빙** 구현하기
 
 <br>
 
