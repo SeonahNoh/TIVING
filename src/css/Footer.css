@@ -1,0 +1,124 @@
+.footer_contents .inner_wrap {
+  position: relative;
+}
+.footer_contents .inner_wrap .footer_top_info {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.footer_contents .inner_wrap .footer_top_info .notice {
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+  padding: 1.233rem 0;
+  color: rgb(163, 163, 163);
+  transition: color 0.1s ease 0s;
+}
+.footer_contents .inner_wrap .footer_top_info .notice .title {
+  padding-right: 1.083rem;
+  color: rgb(110, 110, 110);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.footer_contents .inner_wrap .footer_top_info .notice .message {
+  color: rgb(110, 110, 110);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.footer_contents .inner_wrap .footer_top_info .notice .message:hover {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap {
+  display: flex;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .brand {
+  cursor: pointer;
+  color: rgb(163, 163, 163);
+  margin: 0;
+  transition: color 0.1s ease 0s;
+  white-space: nowrap;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .brand:hover {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .brand:hover::after {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .brand::after {
+  display: inline-block;
+  content: "+";
+  color: rgb(163, 163, 163);
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group {
+  display: flex;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group .vertical_line {
+  margin-right: 1.5rem;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group .group {
+  cursor: pointer;
+  color: rgb(163, 163, 163);
+  margin: 0;
+  white-space: nowrap;
+  transition: color 0.1s ease 0s;
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group .group:hover {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group .group:hover::after {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .footer_top_info .select_wrap .line_group .group::after {
+  display: inline-block;
+  content: "+";
+  color: rgb(163, 163, 163);
+  margin-left: 1rem;
+}
+.footer_contents .inner_wrap .copyright_box {
+  font-size: 1.067rem;
+  opacity: 1;
+  padding-bottom: 1.888rem;
+}
+.footer_contents .inner_wrap .copyright_box p {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+.footer_contents .inner_wrap .copyright_box p span {
+  position: relative;
+  padding: 0px 0.5rem 0px 0.75rem;
+}
+.footer_contents .inner_wrap .copyright_box p span a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(163, 163, 163);
+  transition: color 0.1s ease 0s;
+}
+.footer_contents .inner_wrap .copyright_box p span a:hover {
+  color: rgb(222, 222, 222);
+}
+.footer_contents .inner_wrap .sns_box {
+  display: flex;
+}
+.footer_contents .inner_wrap .sns_box div {
+  margin-left: 0.7rem;
+}
+.footer_contents .inner_wrap .sns_box div a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.footer_contents .inner_wrap .sns_box div a svg {
+  cursor: pointer;
+}
+.footer_contents .inner_wrap .sns_box div a svg:hover rect {
+  fill: rgba(255, 255, 255, 0.2);
+}
+.footer_contents .inner_wrap .sns_box div a svg:hover path {
+  fill: rgba(255, 255, 255, 0.6);
+}
+.footer_contents .inner_wrap p {
+  font-size: 1.067rem;
+}

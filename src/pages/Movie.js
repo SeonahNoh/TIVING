@@ -18,15 +18,15 @@ function Movie() {
 
   // ======= JSON 데이터 요청 =======
   const [live, setLive] = useState([]);
-  const [action, setAction] = useState([]);
+  const [anime, setAnime] = useState([]);
   const [history, setHistory] = useState([]);
   const path = process.env.PUBLIC_URL;
 
   useEffect(() => {
-    axios.get(`${path}/movie.json`)
+    axios.get(`https://SeonahNoh.github.io/data/movie.json`)
     .then(res => {
       setLive(res.data.live);
-      setAction(res.data.action);
+      setAnime(res.data.anime);
       setHistory(res.data.history);
     })
     .catch(err => {
@@ -34,6 +34,7 @@ function Movie() {
     });
   }, []);
   
+
   return (
     <div className="Movie">
       <section className="content_wrap">
@@ -47,7 +48,7 @@ function Movie() {
               slidesPerView={'auto'}
               spaceBetween={10}
               navigation={true}
-              speed={600}
+              speed={300}
             >
               <SwiperSlide className="recomm_slide auto_width">
                 <a href="#!" className="genre_item"><span>드라마</span></a>
@@ -151,7 +152,7 @@ function Movie() {
 
         {/* ======================== 반복되는 영역 ======================== */}
         <section className="recomm_list">
-          <div className="tt_flex"><h2>당신이 좋아할 액션 영화</h2></div>
+          <div className="tt_flex"><h2>당신이 좋아할 애니메이션 영화</h2></div>
           
           <div className="lists_wrap">
             <Swiper
@@ -165,7 +166,7 @@ function Movie() {
               speed={700}
             >
               {
-                action.map((data, index) => (
+                anime.map((data, index) => (
                   <SwiperSlide 
                     key={data.title} 
                     virtualIndex={index} 
@@ -190,7 +191,7 @@ function Movie() {
                             </dd>
                           </dl>
                         </div>
-                      </div>
+                      </div> {/* rcmm_item */}
 
                       <div className="info_item item_info_rank">
                         <p className="info_item_title">

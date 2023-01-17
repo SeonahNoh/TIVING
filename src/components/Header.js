@@ -54,10 +54,10 @@ function Header() {
               <li><a href="#!">로그아웃</a></li>
             </ul>
           </div>
-          
-
         </div>
-      </div>
+      </div> {/* header_warp */}
+
+      
     </header>
   )
 }

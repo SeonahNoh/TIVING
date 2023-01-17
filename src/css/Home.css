@@ -1,18 +1,21 @@
-.Home .main_head_swiper {
+.Home {
+  overflow-x: hidden;
+}
+.Home section.main_head_wrap {
   height: 100%;
 }
-.Home .main_head_swiper .swiper_style {
+.Home section.main_head_wrap .swiper_style {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.Home .main_head_swiper .swiper_style .slide_style {
+.Home section.main_head_wrap .swiper_style .slide_style {
   position: relative;
   width: 100%;
   height: 100%;
   color: #fff;
 }
-.Home .main_head_swiper .swiper_style .slide_style::after {
+.Home section.main_head_wrap .swiper_style .slide_style::after {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -21,12 +24,12 @@
   content: "";
   background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
-.Home .main_head_swiper .swiper_style .slide_style .article_cnt {
+.Home section.main_head_wrap .swiper_style .slide_style .article_cnt {
   position: absolute;
   bottom: 6.555%;
   left: 3.888rem;
 }
-.Home .main_head_swiper .swiper_style .slide_style .article_cnt p {
+.Home section.main_head_wrap .swiper_style .slide_style .article_cnt p {
   z-index: 999;
   width: 100%;
   margin: 1rem 0 0;
@@ -37,13 +40,13 @@
   color: #fff;
   margin-bottom: 10rem;
 }
-.Home .main_head_swiper .swiper_style .slide_style .article_btn {
+.Home section.main_head_wrap .swiper_style .slide_style .article_btn {
   position: absolute;
   bottom: 20%;
   right: 3.888rem;
   cursor: pointer;
 }
-.Home .main_head_swiper .swiper_style .slide_style .article_btn span {
+.Home section.main_head_wrap .swiper_style .slide_style .article_btn span {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -58,12 +61,12 @@
   opacity: 0.9;
   transition: all 0.1s;
 }
-.Home .main_head_swiper .swiper_style .slide_style .article_btn span:hover {
+.Home section.main_head_wrap .swiper_style .slide_style .article_btn span:hover {
   border-color: rgb(255, 255, 255);
   opacity: 1;
 }
-.Home .main_head_swiper .swiper_style .swiper-button-next,
-.Home .main_head_swiper .swiper_style .swiper-button-prev {
+.Home section.main_head_wrap .swiper_style .swiper-button-next,
+.Home section.main_head_wrap .swiper_style .swiper-button-prev {
   position: absolute;
   top: 0;
   width: 3.888rem;
@@ -74,43 +77,43 @@
   opacity: 0.7;
   transition: opacity 0.1s;
 }
-.Home .main_head_swiper .swiper_style .swiper-button-next:hover,
-.Home .main_head_swiper .swiper_style .swiper-button-prev:hover {
+.Home section.main_head_wrap .swiper_style .swiper-button-next:hover,
+.Home section.main_head_wrap .swiper_style .swiper-button-prev:hover {
   opacity: 1;
 }
-.Home .main_head_swiper .swiper_style .swiper-button-next {
+.Home section.main_head_wrap .swiper_style .swiper-button-next {
   right: 0;
   background-image: url(https://www.tving.com/img/icon_slide_right.svg);
 }
-.Home .main_head_swiper .swiper_style .swiper-button-prev {
+.Home section.main_head_wrap .swiper_style .swiper-button-prev {
   left: 0;
   background-image: url(https://www.tving.com/img/icon_slide_left.svg);
 }
-.Home .main_head_swiper .swiper_style .swiper-button-next::after,
-.Home .main_head_swiper .swiper_style .swiper-button-prev::after {
+.Home section.main_head_wrap .swiper_style .swiper-button-next::after,
+.Home section.main_head_wrap .swiper_style .swiper-button-prev::after {
   display: none;
 }
-.Home .main_head_swiper .swiper_style .swiper {
+.Home section.main_head_wrap .swiper_style .swiper {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.Home .main_head_swiper .swiper_style .swiper-pagination {
+.Home section.main_head_wrap .swiper_style .swiper-pagination {
   width: auto;
   position: absolute;
   bottom: 20%;
   left: 5.5rem;
 }
-.Home .main_head_swiper .swiper_style .swiper-pagination .swiper-pagination-bullet {
+.Home section.main_head_wrap .swiper_style .swiper-pagination .swiper-pagination-bullet {
   width: 0.6rem;
   height: 0.66rem;
   margin: 0.388rem;
   background-color: rgb(255, 255, 255);
 }
-.Home .main_head_swiper .swiper_style .swiper-pagination .swiper-pagination-bullet-active {
+.Home section.main_head_wrap .swiper_style .swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgb(255, 255, 255);
 }
-.Home .main_head_swiper .swiper_style .btn {
+.Home section.main_head_wrap .swiper_style .btn {
   position: absolute;
   bottom: 20%;
   left: 2.5rem;
@@ -124,7 +127,7 @@
   align-items: center;
   cursor: pointer;
 }
-.Home .main_head_swiper .swiper_style .btn .btn_pause {
+.Home section.main_head_wrap .swiper_style .btn .btn_pause {
   display: inline-block;
   border-color: #fff;
   border-style: solid;
@@ -133,7 +136,7 @@
   line-height: normal;
   margin: 0;
 }
-.Home .main_head_swiper .swiper_style .btn .btn_play {
+.Home section.main_head_wrap .swiper_style .btn .btn_play {
   display: inline-block;
   width: 0.12rem;
   height: 0.39rem;
@@ -143,4 +146,221 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+}
+.Home section.content_wrap {
+  overflow: hidden;
+  position: relative;
+  margin-top: -5.8rem;
+  z-index: 1;
+}
+.Home section.content_wrap section.recomm_list .tt_flex {
+  padding-left: 3.888rem;
+  padding-right: 3.888rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Home section.content_wrap section.recomm_list .tt_flex h2 {
+  margin: 0;
+  padding: 0 0 1rem;
+  color: #fff;
+  font-size: 1.667rem;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap {
+  overflow: hidden;
+  margin: -4rem -1.333rem -1.5rem;
+  padding: 4rem 1.333rem 3.5rem;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper {
+  overflow: visible;
+  padding-left: 3.888rem;
+  padding-right: 3.888rem;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper:hover .swiper-button-next,
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide {
+  display: inline-block;
+  width: 186.667px;
+  margin-right: 9px;
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms ease-in-out;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide:hover {
+  transform: translate3d(0, -0.75rem, 0);
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide:hover .rcmm_item {
+  box-shadow: 0 0px 20px 0 rgb(0, 0, 0), 0 0 5px 0 rgb(0, 0, 0);
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide:hover .info_item_title {
+  color: rgb(255, 255, 255);
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a {
+  position: relative;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 0 20px 0 transparent, 0 0 5px 0 transparent;
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item::before {
+  display: block;
+  content: "";
+  padding-top: 144%;
+  width: 100%;
+  float: left;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_tag {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_tag .tag_left {
+  position: absolute;
+  left: 0.333rem;
+  top: 0.333rem;
+  white-space: nowrap;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_tag .tag_right {
+  position: absolute;
+  right: 0.333rem;
+  top: 0.333rem;
+  white-space: nowrap;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_tag .down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 9.93%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 10.16%;
+  box-sizing: initial;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_tag .down .origin {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 0.971rem;
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  width: 100%;
+  height: 57.64%;
+  background-image: url(https://www.tving.com/img/tving-new-original.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_img::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .rcmm_item .item_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .info_item {
+  padding: 0.6em 1em 0 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .info_item .info_item_title {
+  position: relative;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-inline-box;
+  margin: 0;
+  max-width: 100%;
+  font-size: 1.78em;
+  line-height: 1.47;
+  color: rgba(255, 255, 255, 0.87);
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.1s;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .item_info_rank {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  align-items: flex-start;
+  column-gap: 1.25rem;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide a .item_info_rank .item_rank_no {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  line-height: 0;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+  transform: skewX(-10deg) translateY(-0.2em);
+  letter-spacing: -5px;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide.monopoly_slide {
+  width: 227.833px;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide.monopoly_slide a {
+  border-radius: 0.425em;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide.monopoly_slide a .rcmm_item {
+  border-radius: 6px;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .recomm_slide.monopoly_slide a .rcmm_item::before {
+  padding-top: 200%;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-prev,
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.888rem;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  background-position: 50% 40%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-prev {
+  left: 0;
+  background-image: url(https://www.tving.com/img/icon_slide_left.svg), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0));
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-next {
+  right: 0;
+  background-image: url(https://www.tving.com/img/icon_slide_right.svg), linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 44%, rgba(0, 0, 0, 0));
+}
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-next::after,
+.Home section.content_wrap section.recomm_list .lists_wrap .recomm_swiper .swiper-button-prev::after {
+  display: none;
 }

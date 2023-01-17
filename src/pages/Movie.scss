@@ -161,8 +161,8 @@
                   backdrop-filter: blur(30px);
                   background-color: rgba(25, 25, 25, 0.96);
                   font-size: 0.8em;
+                  opacity: 0; 
                   transition: opacity 0.1s;
-                  // opacity: 0;
 
                   &::after {
                     display: block;
@@ -171,7 +171,7 @@
                   }
 
                   dl {
-                    padding: 2.083rem 1.45rem;
+                    padding: 1.333rem 1.40rem;
 
                     dt {
                       font-weight: 700;
@@ -213,7 +213,12 @@
 
               } // rcmm_item
 
-  
+              &:hover {
+                .summary_item {
+                  opacity: 1;
+                }
+              }
+              
               .info_item {
                 padding: 0.6em 1em 0 0.05em;
                 color: rgba(255, 255, 255, 0.7);
