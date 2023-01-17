@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/114633506/212847598-6fffd64a-af09-4b78
   </tr>
   <tr>
     <th>State Container</th>
-    <td>Redux</td>
+    <td>Redux()</td>
   </tr>
   <tr>
     <th>Component</th>
