@@ -8,32 +8,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import './Movie.scss'
-
+import { useSelector, useDispatch } from "react-redux";
 
 function Movie() {
-  
   // ======= 콘텐츠 영역 슬라이드 =======
   const [swRef, setSwRef] = useState(null);
-
-
-  // ======= JSON 데이터 요청 =======
-  const [live, setLive] = useState([]);
-  const [anime, setAnime] = useState([]);
-  const [history, setHistory] = useState([]);
-  const path = process.env.PUBLIC_URL;
-
-  useEffect(() => {
-    axios.get(`https://SeonahNoh.github.io/data/movie.json`)
-    .then(res => {
-      setLive(res.data.live);
-      setAnime(res.data.anime);
-      setHistory(res.data.history);
-    })
-    .catch(err => {
-      console.error('통신 에러');
-    });
-  }, []);
   
+  
+  // ======= Redux JSON 데이터 요청 =======
+  let state = useSelector(state => {return state});
+  let dispatch = useDispatch();
+
 
   return (
     <div className="Movie">
@@ -106,7 +91,7 @@ function Movie() {
               speed={700}
             >
               {
-                live.map((data, index) => (
+                (state.movieList.live).map((data, index) => (
                   <SwiperSlide 
                     key={data.title} 
                     virtualIndex={index} 
@@ -166,7 +151,7 @@ function Movie() {
               speed={700}
             >
               {
-                anime.map((data, index) => (
+                (state.movieList.anime).map((data, index) => (
                   <SwiperSlide 
                     key={data.title} 
                     virtualIndex={index} 
@@ -225,7 +210,7 @@ function Movie() {
               speed={700}
             >
               {
-                history.map((data, index) => (
+                (state.movieList.history).map((data, index) => (
                   <SwiperSlide 
                     key={data.title} 
                     virtualIndex={index} 
