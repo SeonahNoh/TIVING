@@ -55,7 +55,7 @@ function Home() {
     .catch(err => {
       console.error('통신 에러');
     });
-  }, []);
+  }, [setPost]);
   
   return (
     <div className="Home">

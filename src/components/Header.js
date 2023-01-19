@@ -22,10 +22,10 @@ function Header() {
     <header>
       <div className={`header_wrap ${scrollPos > 100 && 'color_change'}`}>
         <div className="logo_menu">
-          <h1><Link to="/" className="logo">TVING</Link></h1>
+          <h1><Link to="/tiving/" className="logo">TVING</Link></h1>
           <div><Link to="/live" className="color_menu live">실시간</Link></div>
           <div><Link to="/tv" className="color_menu tv">TV프로그램</Link></div>
-          <div><Link to="/movie" className="color_menu movie">영화</Link></div>
+          <div><Link to="/tiving/movie" className="color_menu movie">영화</Link></div>
           <div><Link to="/paramount" className="color_menu paramount">Paramount+</Link></div>
         </div>
 

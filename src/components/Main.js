@@ -6,8 +6,8 @@ function Main() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie" element={<Movie />} />
+        <Route path="/tiving/" element={<Home />} />
+        <Route path="/tiving/movie" element={<Movie />} />
       </Routes>
     </main>
   )
